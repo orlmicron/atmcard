@@ -1,0 +1,87 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #BF0000;
+    --secundary-color: #7F0000;
+    --aux-color: #FF0000;
+    --dark-color: #400000;
+    --shadow-color: #212121;
+
+    --m: 16px;
+    --xl: calc(1.5 * --m);
+    --s: .8em;
+
+    --gutter: calc(--m * 0.8);
+    font-family: 'Roboto', sans-serif;;
+    color: var(--shadow-color);
+    font-size: var(--m);
+}
+
+/* Cleaning list */
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Style for titles */
+
+h2, h3, h4, h5 {
+    font-family: "Rockwell", serif;
+    color: var(--dark-color);
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.3em;
+}
+
+h3, h4 {
+    text-align: center;
+}
+
+/* Style of general content */
+
+article {
+    padding: var(--s);
+    //margin-bottom: var(--gutter);
+    margin-bottom: .8em;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    background-color: #fff;
+}
+
+p {
+    text-indent: 1em;
+    font-size: 1em;
+}
+
+
+//Styles to body
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+@import "layout/layout";
+@import "base/base";
+@import "effects/effects";

@@ -1,0 +1,139 @@
+/*
+*
+* Base Styles
+*
+*/
+
+/* Styles of banner */
+
+.main-banner__title, .main-banner__data {
+	color: white;
+	text-shadow: 0 0 5px var(--primary-color);
+	text-align: center;
+	font-size: 1.8em;
+
+	@media screen and (min-width: 420px) {
+		text-align: left;
+		margin-left: 1.5em;
+		margin-top: 1.5em;
+	}
+}
+
+.main-banner__data {
+	font-size: 1.2em;
+
+	span {
+		font-style: italic;
+	}
+
+	@media screen and (max-width: 420px) {
+		display: none;
+	}
+}
+
+.main-header::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right:0;
+	top:0;
+	background-color:rgba(black, .5);
+}
+/* Styles of menu */
+
+.main-nav {
+	background-color: var(--primary-color);
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px var(--shadow-color);
+	border: 0;
+
+	ul {
+		width: 100%;
+		height: 100%;
+        display: flex;
+		justify-content: center;
+		
+		@media screen and (min-width : 524px){
+			justify-content: flex-end;
+		}
+	}
+	li {
+		margin: auto .3em;
+
+		a {
+			padding: .5em .1em;
+			color: white;
+			font-weight: bold;
+			transition: .2s;
+			border-radius: 2px;
+		}
+	}
+	a:hover{
+		background-color: rgba(#000, .3);
+	}
+
+
+}
+
+/* Styles to slider */
+.slider-content {
+	overflow: hidden;
+	border: 10px solid black;
+	border-radius: 5px;
+}
+
+.slider-img {
+	transition-duration: .2s;
+}
+figcaption {
+	font-weight: bold;
+	text-align: center;
+}
+
+.slider-img:hover {
+	transform: scale(1.2);
+}
+
+/* Styles of main content */
+
+.main {
+	margin: 0 .5em;
+}
+
+.main-title {
+	color: #400000;
+	text-align: center;
+}
+
+.main-footer {
+	background-color: #212121;
+    color: white;
+    p {
+    	text-indent: 0;
+    	margin: .5em auto;
+    	text-align: center;
+    }
+
+    ul {
+    	margin: .5em auto;
+    	border-top: 1px solid white;
+
+    	li {
+    		padding: .5em;
+    	}
+
+    	a {
+    		color: var(--primary-color);
+    	}
+    }
+
+}
+
+.main-figure__img {
+	width: 100%;
+	border: 5px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px var(--secundary-color);
+}
+

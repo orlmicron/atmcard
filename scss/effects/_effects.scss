@@ -1,0 +1,70 @@
+/*
+*
+* Effects Styles
+*
+*/
+
+/* Style for animated card */
+.atm-card__container {
+	perspective: 1000px;
+	height: 150px;
+	width: 250px;
+	margin: auto;
+}
+
+.atm-card {
+	position: relative;
+	width: 100%;
+	transition: all .5s;
+	transform-style: preserve-3d;
+
+	.atm-card__img {
+		width: 100%;
+		border: none;
+		border-radius: 5px;
+		margin: 0;
+		padding:0;
+		position: absolute;
+		top: 0;
+	}
+}
+
+.atm-backside {
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+
+}
+
+/* Style of the images */
+
+.main-figure__img:hover {
+	animation: .7s gun 1;
+}
+
+@keyframes gun {
+	35% {
+		transform: scaleX(1.2)
+				   scaleY(0.8);
+	}
+	50% {
+		transform: scaleX(0.8)
+				   scaleY(1.2)
+	}
+	65% {
+		transform: scaleX(1.1)
+				   scaleY(0.9)
+	}
+}
+
+
+.atm-card__container:hover {
+
+	.atm-card {
+		transform: rotateY(180deg);
+	}
+
+	.atm-backside {
+		backface-visibility: visible;
+	}
+	
+}
