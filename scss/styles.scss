@@ -14,7 +14,7 @@
     --s: .8em;
 
     --gutter: calc(--m * 0.8);
-    font-family: 'Roboto', sans-serif;;
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
     color: var(--shadow-color);
     font-size: var(--m);
 }
@@ -78,10 +78,10 @@ p {
 
 //Styles to body
 
-body {
-    background-color: rgb(240, 240, 240);
-}
-
+// body {
+//     background-color: rgb(240, 240, 240);
+// }
+@import "base/normalize";
 @import "layout/layout";
 @import "base/base";
 @import "effects/effects";

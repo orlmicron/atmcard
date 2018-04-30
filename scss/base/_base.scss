@@ -77,13 +77,10 @@
 }
 
 /* Styles to slider */
-.slider-content {
-	overflow: hidden;
-	border: 10px solid black;
-	border-radius: 5px;
-}
 
 .slider-img {
+	border: 10px solid black;
+	border-radius: 5px;
 	transition-duration: .2s;
 }
 figcaption {

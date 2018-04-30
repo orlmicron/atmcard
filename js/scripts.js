@@ -1,10 +1,10 @@
 'use strict'
 {
 const sliderImgs = [
-	"atmcard-use.png",
-	"cash-selling.png",
-	"ecomerse.png",
-	"internet-buying.png",
+	"atmcard-use.jpg",
+	"cash-selling.jpg",
+	"ecomerse.jpg",
+	"internet-buying.jpg",
 	"telephone-buying.png"
 ];
 
